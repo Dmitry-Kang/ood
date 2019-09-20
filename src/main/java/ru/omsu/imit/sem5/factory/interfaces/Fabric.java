@@ -1,5 +1,7 @@
 package ru.omsu.imit.sem5.factory.interfaces;
 
 public interface Fabric {
-    void work(int[] arr);
+    int[] sortQuick(int[] arr);
+    int[] sortHeap(int[] arr);
+    int[] sortBucket(int[] arr);
 }

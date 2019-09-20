@@ -13,9 +13,8 @@ public class HeapSort implements Sort
         System.out.println(array[array.length - 1]);
     }
 
-    public void sort(int arr[])
+    public int[] sort(int arr[])
     {
-        System.out.println("Heap sorting");
         int[] a = arr;
         int n = a.length;
 
@@ -30,7 +29,7 @@ public class HeapSort implements Sort
 
             heapify(a, i, 0);
         }
-        printArray(a);
+        return a;
     }
 
     void heapify(int arr[], int n, int i)

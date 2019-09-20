@@ -12,13 +12,12 @@ public class QuickSort implements Sort
         System.out.println(array[array.length - 1]);
     }
 
-    public void sort(int[] arr) {
-        System.out.println("Quick sorting");
+    public int[] sort(int[] arr) {
         int array[] = arr;
         int startIndex = 0;
         int endIndex = array.length - 1;
         doSort(startIndex, endIndex, array);
-        printArray(array);
+        return array;
     }
 
     private void doSort(int start, int end, int[] array) {

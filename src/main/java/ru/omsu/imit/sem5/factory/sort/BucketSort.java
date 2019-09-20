@@ -16,8 +16,7 @@ public class BucketSort implements Sort {
         System.out.println(array[array.length - 1]);
     }
 
-    public void sort(int[] intArr){
-        System.out.println("Bucket sorting");
+    public int[] sort(int[] intArr){
         int noOfBuckets = 5;
         int[] arr = intArr;
         List<Integer>[] buckets = new List[noOfBuckets];
@@ -36,7 +35,7 @@ public class BucketSort implements Sort {
                 arr[i++] = num;
             }
         }
-        printArray(arr);
+        return arr;
     }
 
     private static int hash(int num, int noOfBuckets){
