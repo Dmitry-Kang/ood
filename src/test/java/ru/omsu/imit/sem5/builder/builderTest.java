@@ -4,6 +4,9 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Assert;
 import org.junit.Test;
+import ru.omsu.imit.sem5.builder.classes.Cook;
+import ru.omsu.imit.sem5.builder.classes.Plate;
+import ru.omsu.imit.sem5.builder.classes.Salad;
 
 
 public class builderTest {
@@ -20,14 +23,14 @@ public class builderTest {
         Assert.assertTrue(actual.getCorn() == 140);
         Assert.assertTrue(actual.getGarlic() == 1);
         Assert.assertTrue(actual.getMayonnaise() == 80);
-        Assert.assertNull(actual.getChickenBreast());
-        Assert.assertNull(actual.getMushrooms());
-        Assert.assertNull(actual.getOnion());
-        Assert.assertNull(actual.getSunflowerOil());
-        Assert.assertNull(actual.getSalt());
-        Assert.assertNull(actual.getRedPepper());
-        Assert.assertNull(actual.getBlackPepper());
-        Assert.assertNull(actual.getCucumber());
-        Assert.assertNull(actual.getMustard());
+        Assert.assertTrue(actual.getChickenBreast() == 0);
+        Assert.assertTrue(actual.getMushrooms() == 0);
+        Assert.assertTrue(actual.getOnion() == 0);
+        Assert.assertTrue(actual.getSunFlowerOil() == 0);
+        Assert.assertTrue(actual.getSalt() == 0);
+        Assert.assertTrue(actual.getRedPepper() == 0);
+        Assert.assertTrue(actual.getBlackPepper() == 0);
+        Assert.assertTrue(actual.getCucumber() == 0);
+        Assert.assertTrue(actual.getMustard() == 0);
     }
 }

@@ -11,7 +11,7 @@ public interface Kitchen {
     void setChickenBreast(int val); // куриная грудка, в штуках
     void setMushrooms(int val); // грибы, в граммах
     void setOnion(int val); // лук репчатый, в граммах
-    void setSunflowerOil(int val); // подсолнечное масло, в граммах
+    void setSunFlowerOil(int val); // подсолнечное масло, в граммах
     void setSalt(int val); // соль мелкая, в граммах
     void setRedPepper(int val); // перец красный, в граммах
     void setBlackPepper(int val); // перец чёрный, в граммах
