@@ -1,4 +1,4 @@
-package ru.omsu.imit.sem5.prototype.classes;
+package ru.omsu.imit.sem5.prototype;
 
 import java.util.Objects;
 

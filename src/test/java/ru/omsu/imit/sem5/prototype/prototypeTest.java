@@ -2,7 +2,6 @@ package ru.omsu.imit.sem5.prototype;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.omsu.imit.sem5.prototype.classes.AndroidApp;
 
 import java.util.ArrayList;
 import java.util.List;

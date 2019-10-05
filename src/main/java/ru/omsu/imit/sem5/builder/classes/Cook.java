@@ -1,6 +1,7 @@
 package ru.omsu.imit.sem5.builder.classes;
 
-public class Cook {
+public class Cook
+{
     public void makeHedgehogSalad(Plate plate) {
         plate.setSausage(100);
         plate.setCheese(100);
