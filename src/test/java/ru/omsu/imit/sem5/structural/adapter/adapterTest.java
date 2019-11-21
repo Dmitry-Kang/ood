@@ -1,4 +1,6 @@
+/*
 package ru.omsu.imit.sem5.structural.adapter;
+
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -30,3 +32,4 @@ public class adapterTest {
         Assert.assertTrue(chair.addLeg(adapter2));
     }
 }
+ */
