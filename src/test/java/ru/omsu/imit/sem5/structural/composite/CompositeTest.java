@@ -18,7 +18,7 @@ public class CompositeTest {
         ex.turnOn();
         ax.turnOn();
         a.turnOn();
-        b.turnOn();
+        //b.turnOn();
         System.out.println(ex.getWatt());
     }
 }
