@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class CompositeTest {
     @Test
-    public void testComposite() { // TODO доделать, тут очень простой пример
+    public void testComposite() {
         // Розетка есть, к розетке можно соединить ещё розетки, а к ним ещё разные устройства и все они потребляют ватты
 
         Lamp a = new Lamp();
