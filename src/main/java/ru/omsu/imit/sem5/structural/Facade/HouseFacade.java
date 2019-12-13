@@ -1,14 +1,16 @@
 package ru.omsu.imit.sem5.structural.Facade;
 
+import java.util.List;
+
 public class HouseFacade {
-    public String solveAllProblemsAtHome(Apartment apartment) {
+    public static String solveAllProblemsAtHome(Apartment apartment) {
 
         // уборка комнат + мебель
 
-        Room[] rooms = apartment.getRooms();
+        List<Room> rooms = apartment.getRooms();
+        System.out.println("Решаем проблемы комнат и мебели");
         for (Room room: rooms) {
             room.cleanCabinets(); // почистить шкафы
-            room.cleanObjectsOnShelves(); // почистить предметы на полке от пыли
             room.cleanShelves(); // почистить полки
             room.washCurtains(); // помыть шторы
             room.cleanSofas(); // почистить диваны
@@ -18,7 +20,8 @@ public class HouseFacade {
 
         // Настройка электроники
 
-        Device[] devices = apartment.getDevices();
+        List<Device> devices = apartment.getDevices();
+        System.out.println("Решаем проблемы электроники...");
         for (Device device: devices) {
             device.cleanInside(); // почистить от пыли изнутри
             device.changeThermalGrease(); // поменять термопасту (если это ноутбук или пк)
@@ -27,9 +30,18 @@ public class HouseFacade {
             device.fillUp(); // заправить чем либо (увлажнитель воздуха заправляется водой и т.д.)
         }
 
-        // Сделать всё остальное
+        // Остальное ненадо
 
-
-
+        return "┈╭━╮┈┈╭━╮\n" +
+               "┈┃╮┗━━┛╭┃\n" +
+               "┈╰┓▉┈┈▉┏╯\n" +
+               "┈┈┃┈▅┈┈┃\n" +
+               "╭━┫╰┻╯┈┣━╮\n" +
+               "┃╰┻━━━━┻╯┗━━╮\n" +
+               "┃┈┈┈┈┈┈┈┈┏━╮┃\n" +
+               "┃┈┈┈┈┈┈┈┈┃┈┃┃\n" +
+               "┃┈┈┈┈┈┈┈┈┗━╯┃\n" +
+               "┃┈┈┈┈┈┈┈┈┏━━╯\n" +
+               "╰━━━━━━━━╯";
     }
 }
