@@ -9,7 +9,7 @@ public class PC implements Device {
     private VectorXY vector;
 
 
-    PC() {
+    public PC() {
         isOn = false;
         set = new HashSet<>();
         vector = new VectorXY(0, 0);

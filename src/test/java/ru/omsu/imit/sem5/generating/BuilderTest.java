@@ -1,4 +1,4 @@
-package ru.omsu.imit.sem5.generating.builder;
+package ru.omsu.imit.sem5.generating;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -9,7 +9,7 @@ import ru.omsu.imit.sem5.generating.builder.classes.Plate;
 import ru.omsu.imit.sem5.generating.builder.classes.Salad;
 
 
-public class builderTest {
+public class BuilderTest {
     @Test
     public void testBuildHedgehogSalad() {
         Cook povar = new Cook();

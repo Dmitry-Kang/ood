@@ -1,11 +1,14 @@
-/*
-package ru.omsu.imit.sem5.structural.adapter;
+package ru.omsu.imit.sem5.structural;
 
 
 import org.junit.Assert;
 import org.junit.Test;
+import ru.omsu.imit.sem5.structural.adapter.Figure;
+import ru.omsu.imit.sem5.structural.adapter.FigureToTableLegAdapter;
+import ru.omsu.imit.sem5.structural.adapter.IkeaChair;
+import ru.omsu.imit.sem5.structural.adapter.TableLeg;
 
-public class adapterTest {
+public class AdapterTest {
 
     @Test
     public void testAdapter() {
@@ -32,4 +35,4 @@ public class adapterTest {
         Assert.assertTrue(chair.addLeg(adapter2));
     }
 }
- */
+

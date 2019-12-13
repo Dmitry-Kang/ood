@@ -3,7 +3,7 @@ package ru.omsu.imit.sem5.structural.bridge;
 public class Joystick implements Input {
     private Device device;
 
-    Joystick(Device device) {
+    public Joystick(Device device) {
         this.device = device;
         connect();
     }

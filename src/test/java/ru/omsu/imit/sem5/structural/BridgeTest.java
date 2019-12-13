@@ -1,6 +1,9 @@
-package ru.omsu.imit.sem5.structural.bridge;
+package ru.omsu.imit.sem5.structural;
 
 import org.junit.Test;
+import ru.omsu.imit.sem5.structural.bridge.Joystick;
+import ru.omsu.imit.sem5.structural.bridge.PC;
+import ru.omsu.imit.sem5.structural.bridge.VRHelmet;
 
 public class BridgeTest {
     @Test

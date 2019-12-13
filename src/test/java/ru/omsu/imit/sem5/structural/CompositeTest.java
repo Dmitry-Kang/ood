@@ -1,6 +1,8 @@
-package ru.omsu.imit.sem5.structural.composite;
+package ru.omsu.imit.sem5.structural;
 
 import org.junit.Test;
+import ru.omsu.imit.sem5.structural.composite.Lamp;
+import ru.omsu.imit.sem5.structural.composite.extender;
 
 public class CompositeTest {
     @Test

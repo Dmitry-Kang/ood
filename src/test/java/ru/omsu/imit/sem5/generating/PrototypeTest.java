@@ -1,12 +1,13 @@
-package ru.omsu.imit.sem5.generating.prototype;
+package ru.omsu.imit.sem5.generating;
 
 import org.junit.Assert;
 import org.junit.Test;
+import ru.omsu.imit.sem5.generating.prototype.AndroidApp;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class prototypeTest {
+public class PrototypeTest {
     @Test
     public void testPrototypePattern() {
         List<AndroidApp> apps = new ArrayList<>();

@@ -1,7 +1,6 @@
-package ru.omsu.imit.sem5.structural.Facade;
+package ru.omsu.imit.sem5.structural.facade;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Apartment {

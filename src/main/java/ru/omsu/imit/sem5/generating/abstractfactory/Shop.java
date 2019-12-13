@@ -10,13 +10,13 @@ import java.util.Vector;
  * Код, использующий фабрику, не волнует с какой конкретно фабрикой он работает.
  * Все получатели продуктов работают с продуктами через абстрактный интерфейс.
  */
-class Shop {
+public class Shop {
     private Vector<Sofa> sofas = new Vector<>();
     private Vector<Chair> chairs = new Vector<>();
     private Vector<Bed> beds = new Vector<>();
     private int cash = 100;
 
-    boolean buySofa(Sofa sofa) {
+    public boolean buySofa(Sofa sofa) {
         if (cash - sofa.getPrice() >= 0) {
             sofas.add(sofa);
             cash -= sofa.getPrice();
@@ -27,7 +27,7 @@ class Shop {
         return false;
     }
 
-    boolean buyChair(Chair chair) {
+    public boolean buyChair(Chair chair) {
         if (cash - chair.getPrice() >= 0) {
             chairs.add(chair);
             cash -= chair.getPrice();
@@ -38,7 +38,7 @@ class Shop {
         return false;
     }
 
-    boolean buyBed(Bed bed) {
+    public boolean buyBed(Bed bed) {
         if (cash - bed.getPrice() >= 0) {
             beds.add(bed);
             cash -= bed.getPrice();
@@ -49,7 +49,7 @@ class Shop {
         return false;
     }
 
-    boolean sellSofa(Sofa sofa) {
+    public boolean sellSofa(Sofa sofa) {
         if (sofas.contains(sofa)) {
             cash += sofa.getPrice();
             sofas.remove(sofa);
@@ -60,7 +60,7 @@ class Shop {
         return false;
     }
 
-    boolean sellChair(Chair chair) {
+    public boolean sellChair(Chair chair) {
         if (chairs.contains(chair)) {
             cash += chair.getPrice();
             chairs.remove(chair);
@@ -71,7 +71,7 @@ class Shop {
         return false;
     }
 
-    boolean sellBed(Bed bed) {
+    public boolean sellBed(Bed bed) {
         if (beds.contains(bed)) {
             cash += bed.getPrice();
             beds.remove(bed);
@@ -82,7 +82,7 @@ class Shop {
         return false;
     }
 
-    int getCash() {
+    public int getCash() {
         return cash;
     }
 }

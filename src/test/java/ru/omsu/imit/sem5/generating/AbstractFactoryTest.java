@@ -1,7 +1,8 @@
-package ru.omsu.imit.sem5.generating.abstractfactory;
+package ru.omsu.imit.sem5.generating;
 
 import org.junit.Assert;
 import org.junit.Test;
+import ru.omsu.imit.sem5.generating.abstractfactory.Shop;
 import ru.omsu.imit.sem5.generating.abstractfactory.factories.EcoFactory;
 import ru.omsu.imit.sem5.generating.abstractfactory.factories.HiTechFactory;
 import ru.omsu.imit.sem5.generating.abstractfactory.factories.LofaFactory;
@@ -10,7 +11,7 @@ import ru.omsu.imit.sem5.generating.abstractfactory.interfaces.Chair;
 import ru.omsu.imit.sem5.generating.abstractfactory.interfaces.FurnitureFactory;
 import ru.omsu.imit.sem5.generating.abstractfactory.interfaces.Sofa;
 
-public class abstractFactoryTest {
+public class AbstractFactoryTest {
 
     @Test
     public void testabstractFactory() {

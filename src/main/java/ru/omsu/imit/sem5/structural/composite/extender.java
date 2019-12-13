@@ -8,7 +8,7 @@ public class extender extends Device {
     private List<Device> devices;
     private boolean isOn;
 
-    extender(Device... devices) {
+    public extender(Device... devices) {
         super();
         this.devices = new ArrayList(Arrays.asList(devices));
     }

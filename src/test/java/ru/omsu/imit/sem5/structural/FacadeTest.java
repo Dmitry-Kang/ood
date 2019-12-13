@@ -1,10 +1,10 @@
-package ru.omsu.imit.sem5.structural.facade;
+package ru.omsu.imit.sem5.structural;
 
 import org.junit.Test;
-import ru.omsu.imit.sem5.structural.Facade.Apartment;
-import ru.omsu.imit.sem5.structural.Facade.Device;
-import ru.omsu.imit.sem5.structural.Facade.HouseFacade;
-import ru.omsu.imit.sem5.structural.Facade.Room;
+import ru.omsu.imit.sem5.structural.facade.Apartment;
+import ru.omsu.imit.sem5.structural.facade.Device;
+import ru.omsu.imit.sem5.structural.facade.HouseFacade;
+import ru.omsu.imit.sem5.structural.facade.Room;
 
 public class FacadeTest {
     @Test

@@ -1,9 +1,10 @@
-package ru.omsu.imit.sem5.generating.singleton;
+package ru.omsu.imit.sem5.generating;
 
 import org.junit.Assert;
 import org.junit.Test;
+import ru.omsu.imit.sem5.generating.singleton.Server;
 
-public class singletonTest
+public class SingletonTest
 {
     @Test
     public void testSingleton()

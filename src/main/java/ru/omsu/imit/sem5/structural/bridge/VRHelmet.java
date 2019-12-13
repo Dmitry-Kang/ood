@@ -3,7 +3,7 @@ package ru.omsu.imit.sem5.structural.bridge;
 public class VRHelmet implements Input {
     private Device device;
 
-    VRHelmet(Device device) {
+    public VRHelmet(Device device) {
         this.device = device;
         connect();
     }

@@ -1,4 +1,4 @@
-package ru.omsu.imit.sem5.generating.factory;
+package ru.omsu.imit.sem5.generating;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -6,7 +6,7 @@ import org.junit.Test;
 import ru.omsu.imit.sem5.generating.factory.fabrics.SortFabric;
 import ru.omsu.imit.sem5.generating.factory.interfaces.Fabric;
 
-public class factoryTest
+public class FactoryTest
 {
     @Test
     public void testFabricPattern() {

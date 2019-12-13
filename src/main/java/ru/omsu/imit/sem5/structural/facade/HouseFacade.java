@@ -1,4 +1,4 @@
-package ru.omsu.imit.sem5.structural.Facade;
+package ru.omsu.imit.sem5.structural.facade;
 
 import java.util.List;
 
