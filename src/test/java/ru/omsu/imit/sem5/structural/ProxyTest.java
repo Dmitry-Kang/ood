@@ -1,36 +1,24 @@
 package ru.omsu.imit.sem5.structural;
 
 import org.junit.Test;
-import ru.omsu.imit.sem5.structural.Proxy.ThirdPartyYoutubeClass;
-import ru.omsu.imit.sem5.structural.Proxy.YoutubeCacheProxy;
-import ru.omsu.imit.sem5.structural.Proxy.YoutubeDownloader;
+import ru.omsu.imit.sem5.structural.Proxy.Lesson;
+import ru.omsu.imit.sem5.structural.Proxy.Schkolnik;
+import ru.omsu.imit.sem5.structural.Proxy.SmartSchkolnik;
 
 public class ProxyTest {
     @Test
     public void mainTest() {
-        YoutubeDownloader naiveDownloader = new YoutubeDownloader(new ThirdPartyYoutubeClass());
-        YoutubeDownloader smartDownloader = new YoutubeDownloader(new YoutubeCacheProxy());
+        Lesson lesson1 = new Lesson("функциональный анализ");
+        Lesson lesson2 = new Lesson("Задача о размещении объектов");
+        Lesson lesson3 = new Lesson("Математика");
 
-        long naive = test(naiveDownloader);
-        long smart = test(smartDownloader);
-        System.out.print("Time saved by caching proxy: " + (naive - smart) + "ms");
+        String shporgalka1 = "сложноразборчивые формулы";
+        String shporgalka2 = "формула на английском";
 
-    }
+        SmartSchkolnik smartSchkolnik = new SmartSchkolnik();
+        smartSchkolnik.solve(lesson1, null);
 
-    private static long test(YoutubeDownloader downloader) {
-        long startTime = System.currentTimeMillis();
+        smartSchkolnik.solve()
 
-        // User behavior in our app:
-        downloader.renderPopularVideos();
-        downloader.renderVideoPage("catzzzzzzzzz");
-        downloader.renderPopularVideos();
-        downloader.renderVideoPage("dancesvideoo");
-        // Users might visit the same page quite often.
-        downloader.renderVideoPage("catzzzzzzzzz");
-        downloader.renderVideoPage("someothervid");
-
-        long estimatedTime = System.currentTimeMillis() - startTime;
-        System.out.print("Time elapsed: " + estimatedTime + "ms\n");
-        return estimatedTime;
     }
 }
