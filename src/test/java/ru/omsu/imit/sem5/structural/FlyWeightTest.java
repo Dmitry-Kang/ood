@@ -1,7 +1,7 @@
 //package ru.omsu.imit.sem5.structural;
 //
 //import org.junit.Test;
-//import ru.omsu.imit.sem5.structural.flyweight.Forest;
+//import ru.omsu.imit.sem5.structural.flyweight.RoomWithWalls;
 //
 //import java.awt.*;
 //
@@ -12,7 +12,7 @@
 //    int TREES_TO_DRAW = 1000000;
 //    int TREE_TYPES = 2;
 //
-//        Forest forest = new Forest();
+//        RoomWithWalls forest = new RoomWithWalls();
 //        for (int i = 0; i < Math.floor(TREES_TO_DRAW / TREE_TYPES); i++) {
 //            forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
 //                    "Summer Oak", Color.GREEN, "Oak texture stub");

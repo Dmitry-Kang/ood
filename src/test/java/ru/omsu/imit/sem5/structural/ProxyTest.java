@@ -16,9 +16,11 @@ public class ProxyTest {
         String shporgalka2 = "формула на английском";
 
         SmartSchkolnik smartSchkolnik = new SmartSchkolnik();
-        smartSchkolnik.solve(lesson1, null);
+        System.out.println("Ответ первой задачки: " + smartSchkolnik.solve(lesson1) + "\n");
+        System.out.println("Ответ первой задачки: " + smartSchkolnik.solve(lesson1) + "\n");
 
-        smartSchkolnik.solve()
+        System.out.println("Ответ второй задачки: " + smartSchkolnik.solve(lesson2) + "\n");
+        System.out.println("Ответ третьей задачки: " + smartSchkolnik.solve(lesson3) + "\n");
 
     }
 }

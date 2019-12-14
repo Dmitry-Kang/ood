@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class SmartSchkolnik implements SchoolProgramm {
     private Schkolnik schkolnik;
-    private Map<String, String> shporgalki;
+    private Map<String, Integer> shporgalki;
 
     public SmartSchkolnik() {
         this.schkolnik = new Schkolnik();
@@ -14,22 +14,13 @@ public class SmartSchkolnik implements SchoolProgramm {
 
 
     @Override
-    public int solve(Lesson lesson, String shporgalka) {
-        if (shporgalka != null) {
-            if (shporgalki.containsValue(shporgalka)) {
-                return schkolnik.solve(lesson, shporgalka);
-            } else {
-                shporgalki.put(lesson.getType(), shporgalka + " any solving");
-                return schkolnik.solve(lesson, "новая" + shporgalka);
-            }
-        }
-
+    public int solve(Lesson lesson) {
         if (shporgalki.containsKey(lesson.getType())) {
-            // новая или знакомая
-            if (shporgalki.get(lesson.getType().contains("новая"))) {
-
-            }
+            System.out.println("Умный школьник уже решал такую задачку");
+            return shporgalki.get(lesson.getType());
         }
-        return schkolnik.solve(lesson, null);
+        int res = schkolnik.solve(lesson);
+        shporgalki.put(lesson.getType(), res);
+        return res;
     }
 }
