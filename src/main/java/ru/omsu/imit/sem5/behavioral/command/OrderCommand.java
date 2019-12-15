@@ -7,8 +7,12 @@ public class OrderCommand extends Command {
     }
 
     @Override
-    public boolean execute() {
-        if (tableWithButtons.cash - )
-        return true;
+    public boolean execute(String type) {
+        if (tableWithButtons.cash - cost >= 0) {
+            tableWithButtons.cash -= cost;
+            tableWithButtons.foods.add(tableWithButtons.foodService.get(type, cost));
+            return true;
+        }
+        return false;
     }
 }

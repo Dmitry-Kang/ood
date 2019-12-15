@@ -7,13 +7,15 @@ public class TableWithButtons {
     private boolean isButtonsOn;
     public int cash;
     public List<Button> buttons;
-    public List<Food> eat;
+    public FoodService foodService;
+    public List<Food> foods;
 
     public TableWithButtons(int cash) {
         isButtonsOn = true;
         this.cash = cash;
         buttons = new ArrayList<>();
-        eat = new ArrayList<>();
+        foodService = new FoodService();
+        foods = new ArrayList<>();
     }
 
     public void powerOn() {
@@ -33,17 +35,19 @@ public class TableWithButtons {
     public boolean pressButton(String buttonType) {
         for (Button button: buttons) {
             if (button.type == buttonType) {
-                return button.execute();
+                return executeCommand(button.command, button.type);
+//                return button.execute();
             }
         }
         System.out.println("Кнопка не найдена");
         return false;
     }
 
-    private void executeCommand(Command command) {
+    private boolean executeCommand(Command command, String type) {
         if (isButtonsOn) {
-            command.execute();
+            return command.execute(type);
         }
+        return false;
     }
 
 }

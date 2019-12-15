@@ -10,9 +10,13 @@ public class CommandTest {
     public void testCommand() {
         TableWithButtons tableWithButtons = new TableWithButtons(100);
 
-        tableWithButtons.addButton(new Button("order pizza", 25, new OrderCommand(tableWithButtons, 25)));
-        tableWithButtons.addButton(new Button("order burger", 10, new OrderCommand(tableWithButtons, 10)));
+        tableWithButtons.addButton(new Button("pizza", 25, new OrderCommand(tableWithButtons, 25)));
+        tableWithButtons.addButton(new Button("burger", 10, new OrderCommand(tableWithButtons, 10)));
 
-        tableWithButtons.pressButton("order pizza");
+        System.out.println(tableWithButtons.pressButton("pizza")); // true
+        System.out.println(tableWithButtons.pressButton("pizza")); // true
+        System.out.println(tableWithButtons.pressButton("pizza")); // true
+        System.out.println(tableWithButtons.pressButton("pizza")); // true
+        System.out.println(tableWithButtons.pressButton("pizza")); // false < 0 cash
     }
 }

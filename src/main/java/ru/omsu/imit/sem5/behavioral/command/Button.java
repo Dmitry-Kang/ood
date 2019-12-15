@@ -12,7 +12,7 @@ public class Button {
     }
 
     public boolean execute() {
-        return command.execute();
+        return command.execute(type);
     }
 
     public String getType() {
