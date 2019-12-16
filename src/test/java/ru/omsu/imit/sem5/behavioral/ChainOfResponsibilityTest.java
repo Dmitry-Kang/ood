@@ -1,7 +1,7 @@
 package ru.omsu.imit.sem5.behavioral;
 
 import org.junit.Test;
-import ru.omsu.imit.sem5.behavioral.ChainOfResponsibility.*;
+import ru.omsu.imit.sem5.behavioral.chainofresponsibility.*;
 
 public class ChainOfResponsibilityTest {
 

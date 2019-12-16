@@ -1,4 +1,4 @@
-package ru.omsu.imit.sem5.behavioral.ChainOfResponsibility;
+package ru.omsu.imit.sem5.behavioral.chainofresponsibility;
 
 public class Limbo extends CircleOfHell {
     @Override
